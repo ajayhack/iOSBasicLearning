@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		741DC3672BA04DDE0030183C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC3662BA04DDE0030183C /* AppDelegate.swift */; };
 		741DC3692BA04DDE0030183C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC3682BA04DDE0030183C /* SceneDelegate.swift */; };
-		741DC36B2BA04DDE0030183C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC36A2BA04DDE0030183C /* ViewController.swift */; };
 		741DC36E2BA04DDE0030183C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741DC36C2BA04DDE0030183C /* Main.storyboard */; };
 		741DC3702BA04DE00030183C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741DC36F2BA04DE00030183C /* Assets.xcassets */; };
 		741DC3732BA04DE00030183C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741DC3712BA04DE00030183C /* LaunchScreen.storyboard */; };
 		741DC37E2BA04DE00030183C /* iOSBasicLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC37D2BA04DE00030183C /* iOSBasicLearningTests.swift */; };
 		741DC3882BA04DE00030183C /* iOSBasicLearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC3872BA04DE00030183C /* iOSBasicLearningUITests.swift */; };
 		741DC38A2BA04DE00030183C /* iOSBasicLearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC3892BA04DE00030183C /* iOSBasicLearningUITestsLaunchTests.swift */; };
+		741DC3972BA04E140030183C /* ColorsTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC3962BA04E140030183C /* ColorsTableViewVC.swift */; };
+		741DC3992BA04F050030183C /* ColorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC3982BA04F050030183C /* ColorDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		741DC3632BA04DDE0030183C /* iOSBasicLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBasicLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		741DC3662BA04DDE0030183C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		741DC3682BA04DDE0030183C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		741DC36A2BA04DDE0030183C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		741DC36D2BA04DDE0030183C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		741DC36F2BA04DE00030183C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		741DC3722BA04DE00030183C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		741DC3832BA04DE00030183C /* iOSBasicLearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSBasicLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		741DC3872BA04DE00030183C /* iOSBasicLearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBasicLearningUITests.swift; sourceTree = "<group>"; };
 		741DC3892BA04DE00030183C /* iOSBasicLearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBasicLearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		741DC3962BA04E140030183C /* ColorsTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableViewVC.swift; sourceTree = "<group>"; };
+		741DC3982BA04F050030183C /* ColorDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				741DC3662BA04DDE0030183C /* AppDelegate.swift */,
 				741DC3682BA04DDE0030183C /* SceneDelegate.swift */,
-				741DC36A2BA04DDE0030183C /* ViewController.swift */,
 				741DC36C2BA04DDE0030183C /* Main.storyboard */,
+				741DC3962BA04E140030183C /* ColorsTableViewVC.swift */,
 				741DC36F2BA04DE00030183C /* Assets.xcassets */,
 				741DC3712BA04DE00030183C /* LaunchScreen.storyboard */,
 				741DC3742BA04DE00030183C /* Info.plist */,
+				741DC3982BA04F050030183C /* ColorDetailVC.swift */,
 			);
 			path = iOSBasicLearning;
 			sourceTree = "<group>";
@@ -258,8 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				741DC36B2BA04DDE0030183C /* ViewController.swift in Sources */,
 				741DC3672BA04DDE0030183C /* AppDelegate.swift in Sources */,
+				741DC3992BA04F050030183C /* ColorDetailVC.swift in Sources */,
+				741DC3972BA04E140030183C /* ColorsTableViewVC.swift in Sources */,
 				741DC3692BA04DDE0030183C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
